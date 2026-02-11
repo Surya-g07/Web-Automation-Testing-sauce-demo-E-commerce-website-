@@ -1,0 +1,71 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SauceDemo Suite">
+
+    <test name="Login Page Test">
+        <classes>
+            <class name="Title"/>
+
+            <!-- Valid users -->
+            <class name="Username2"/>
+            <class name="User3"/>
+            <class name="User4"/>
+
+            <!-- Invalid cases -->
+            <class name="Wrongusername"/>
+            <class name="WrongPassword"/>
+
+        </classes>
+    </test>
+
+    <test name="Icon Test">
+        <classes>
+            <class name="LinkedinIcon"/>
+            <class name="FBIcon"/>
+            <class name="TwitterIcon"/>
+        </classes>
+    </test>
+
+    <test name="Filters Section">
+        <classes>
+            <class name="Filter"/>
+        </classes>
+    </test>
+
+    <test name="Button Test">
+        <classes>
+            <class name="Buttons"/>
+            <class name="CartButton"/>
+            <class name="ProductActions"/>
+        </classes>
+    </test>
+
+    <test name="Navigation Bar / Elements">
+        <classes>
+            <class name="Navigation"/>
+            <class name="Logout"/>
+            <class name="Reset"/>
+            <class name="AboutElementSearchBar"/>
+            <class name="AbtDevMousehover"/>
+            <class name="AbtProductMousehover"/>
+            <class name="AbtResMousehover"/>
+            <class name="AbtSolMousehover"/>
+        </classes>
+    </test>
+
+    <test name="Checkout / Order Section">
+        <classes>
+            <class name="Shopping"/>
+            <class name="Checkout"/>
+            <class name="NoProducts"/>
+        </classes>
+    </test>
+
+</suite>
+
+
+<!--Note: * If you face any issue while running the testNG.xml you run the test scripts according to your choice.
+
+          * If there is any unwanted failure, assign each class in a seperate <test>.
+
+          * Dont rely on the broken test scripts. If you run any failure test case in one <test> that contains another classes,
+            the true condition also noted as false. -->
